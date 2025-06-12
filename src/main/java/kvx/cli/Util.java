@@ -1,0 +1,14 @@
+package kvx.cli;
+
+import static kvx.cli.Std.print;
+
+public class Util {
+    
+    public static void drawLine(int length, char character) {
+        for (int i = 0; i < length; i++) {
+            print("%c", character);
+        }
+        System.out.println();
+    }
+
+}
