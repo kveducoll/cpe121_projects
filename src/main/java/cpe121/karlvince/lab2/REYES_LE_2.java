@@ -1,4 +1,4 @@
-package cpe121.karlvince.lab1;
+package cpe121.karlvince.lab2;
 
 import static kvx.cli.Std.print;
 import static kvx.cli.Std.clear;
