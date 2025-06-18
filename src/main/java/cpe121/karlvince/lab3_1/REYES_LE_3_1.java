@@ -11,11 +11,12 @@ public class REYES_LE_3_1 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        final int range = 3;
         double gradeTotal = 0;
         clear();
 
-        for (int i = 1; i < 4; i++) {
-            print("Enter grade %d: ", i);
+        for (int i = 1; i < (range + 1); i++) {
+            print("#%d | Enter grade: ", i);
             String data = in.readLine();
             gradeTotal += Integer.parseInt(data);
         }
@@ -27,5 +28,8 @@ public class REYES_LE_3_1 {
 
         print("Result: ");
         if (gradeAverage >= 60 ) {print(":-)"); newl();} else {print(":-("); newl();}
+    
+        newl();
+
     }
 }

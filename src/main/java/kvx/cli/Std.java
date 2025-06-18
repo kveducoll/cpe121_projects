@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * Copyright (c) 2025 Kaviyes. All rights reserved.
  * Proprietary/internal use only.
- * This library provides standard CLI utilities for Java applications.
+ * This library provides standard CLI utilities for Java related laboratory tasks to reduce boilerplates.
  * 
  * Derived from Jcandy (internal).
  */
@@ -13,6 +13,9 @@ import java.io.IOException;
 public class Std {
 
     public static void newl() {System.out.println();}
+    public static void newl(int range) {
+        for (int i = 1; i <= range; i++) {System.out.println();}
+    }
 
     public static void delay(int millis) {
         try {
@@ -24,8 +27,8 @@ public class Std {
 
     public static void clear() {
 
-        print("[INFO]   Attempted to clear the terminal.");
-        print("[WARN]   If you see this, clearing the terminal was unsuccessful.");
+        System.out.println("[INFO]   Attempting to clear the terminal.");
+        System.out.println("[WARN]   If you see this, clearing the terminal was unsuccessful."); newl();
 
         String os = System.getProperty("os.name");
         

@@ -19,7 +19,7 @@ public class REYES_LE_1 {
     public static void main(String[] args) {
         clear();
         format("bold");
-        print("KARL VINCE REYES"); newl(); format("reset");
+        print("%s", name); newl(); format("reset");
         drawLine(WIDTH_LENGTH, '─');
 
         format("bold");
