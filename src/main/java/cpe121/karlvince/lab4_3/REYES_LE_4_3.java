@@ -32,7 +32,6 @@ public class REYES_LE_4_3 {
 
                 average += Integer.parseInt(studentList[i][k]);
                 print("%d    │    ", Integer.parseInt(studentList[i][k]));
-
             }
             
             print("%.0f   │", (average / 2)); newl();
