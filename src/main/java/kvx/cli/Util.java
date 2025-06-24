@@ -16,4 +16,15 @@ public class Util {
             print("%c", character);
         }
     }
+
+    public static String returnLine(int length, char character) {
+        
+        String _finatStr = "";
+        
+        for (int i = 0; i < length; i++) {
+            _finatStr += character;
+        }
+
+        return _finatStr;
+    }
 }
