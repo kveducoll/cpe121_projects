@@ -19,6 +19,7 @@ public class REYES_LE_4_3 {
             {"Carol", "95", "94"},
         };
 
+        format("bg_yellow", "black");
         predefinedLine(2);
         print("│  NAME   │  GRADE1  │  GRADE2  │ AVERAGE │");newl();
         predefinedLine(1);
@@ -44,7 +45,7 @@ public class REYES_LE_4_3 {
         }
 
         print("└"); drawSingleLine(41, '─'); print("┘"); newl();
-
+        format("reset"); newl(2);
     }
 
     // For table
