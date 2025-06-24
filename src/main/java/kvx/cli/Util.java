@@ -11,4 +11,9 @@ public class Util {
         System.out.println();
     }
 
+    public static void drawSingleLine(int length, char character) {
+        for (int i = 0; i < length; i++) {
+            print("%c", character);
+        }
+    }
 }
