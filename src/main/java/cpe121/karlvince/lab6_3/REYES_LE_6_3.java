@@ -17,14 +17,14 @@ public class REYES_LE_6_3 {
         
         format("bold", "white");
         drawLine(LINE_LENGTH, '═');
-        print("                 ADDRESS BOOK MANAGEMENT SYSTEM");
+        print("                      ADDRESS BOOK SYSTEM");
         newl();
         drawLine(LINE_LENGTH, '═');
         format("reset");
         newl();
         
         format("cyan");
-        print("                      (Type /e to cancel input)");
+        print("                    (Type /e to cancel input)");
         format("reset");
         newl(2);
         
