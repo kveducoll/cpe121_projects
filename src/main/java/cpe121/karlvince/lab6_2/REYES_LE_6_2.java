@@ -167,12 +167,18 @@ public class REYES_LE_6_2 {
             }
         }
         
-        int labelWidth = 15;
-        int valueWidth = 30;
+        int labelWidth = Math.max(20, 15);
+        int valueWidth = Math.max(30, 11);
         int cellPadding = 1;
         
         String[] labels = {"Name", "Address", "Telephone", "Email"};
         String[] values = {entry.getName(), entry.getAddress(), entry.getTelephoneNumber(), entry.getEmailAddress()};
+        
+        for (String label : labels) {
+            if (label.length() > labelWidth) {
+                labelWidth = label.length();
+            }
+        }
         
         for (String value : values) {
             if (value.length() > valueWidth) {
@@ -190,9 +196,9 @@ public class REYES_LE_6_2 {
         newl();
         
         print("%c", TableChar.VERTICAL.symbol);
-        print("%s%s%s", returnLine(cellPadding, ' '), "FIELD", returnLine(labelWidth - 5 + cellPadding, ' '));
+        print("%s%s%s", returnLine(cellPadding, ' '), "Attributes/Properties", returnLine(labelWidth - "Attributes/Properties".length() + cellPadding, ' '));
         print("%c", TableChar.VERTICAL.symbol);
-        print("%s%s%s", returnLine(cellPadding, ' '), "VALUE", returnLine(valueWidth - 5 + cellPadding, ' '));
+        print("%s%s%s", returnLine(cellPadding, ' '), "Description", returnLine(valueWidth - "Description".length() + cellPadding, ' '));
         print("%c", TableChar.VERTICAL.symbol);
         newl();
         
